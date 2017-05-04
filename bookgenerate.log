@@ -1,0 +1,114 @@
+2017-05-04 10:17:43.143  INFO 3852 --- [restartedMain] com.china.ciic.bookgenerate.Application  : Starting Application on He-PC with PID 3852 (D:\studywebSpringBootDemo\bookgenerate\build\build\classes\main started by once in D:\studywebSpringBootDemo)
+2017-05-04 10:17:43.144  INFO 3852 --- [restartedMain] com.china.ciic.bookgenerate.Application  : No active profile set, falling back to default profiles: default
+2017-05-04 10:17:43.611  INFO 3852 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1632866: startup date [Thu May 04 10:17:43 CST 2017]; root of context hierarchy
+2017-05-04 10:17:46.233  INFO 3852 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 10:17:46.245  INFO 3852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 10:17:46.245  INFO 3852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 10:17:46.340  INFO 3852 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/readback]      : Initializing Spring embedded WebApplicationContext
+2017-05-04 10:17:46.340  INFO 3852 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2732 ms
+2017-05-04 10:17:46.447  INFO 3852 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 10:17:46.451  INFO 3852 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 10:17:46.660  INFO 3852 --- [restartedMain] com.mchange.v2.log.MLog                  : MLog clients using log4j logging.
+2017-05-04 10:17:46.690  INFO 3852 --- [restartedMain] com.mchange.v2.c3p0.C3P0Registry         : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-04 10:17:47.232  INFO 3852 --- [restartedMain] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99n1m24nuj1e3nvuz|c18b8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99n1m24nuj1e3nvuz|c18b8, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.8.1:3306/web_reader?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-04 10:18:07.211  WARN 3852 --- [Timer-0] c.m.v.a.ThreadPoolAsynchronousRunner     : com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@148b575 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2017-05-04 10:18:07.216  WARN 3852 --- [Timer-0] c.m.v.a.ThreadPoolAsynchronousRunner     : com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@148b575 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@122b3ca (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@149c7ac (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@d3f925 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@8a23f4
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@13e917b
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2017-05-04 10:22:33.204  INFO 7632 --- [restartedMain] com.china.ciic.bookgenerate.Application  : Starting Application on He-PC with PID 7632 (D:\studywebSpringBootDemo\bookgenerate\build\build\classes\main started by once in D:\studywebSpringBootDemo)
+2017-05-04 10:22:33.206  INFO 7632 --- [restartedMain] com.china.ciic.bookgenerate.Application  : No active profile set, falling back to default profiles: default
+2017-05-04 10:22:33.479  INFO 7632 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@119ab42: startup date [Thu May 04 10:22:33 CST 2017]; root of context hierarchy
+2017-05-04 10:22:35.396  INFO 7632 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 10:22:35.407  INFO 7632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 10:22:35.408  INFO 7632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 10:22:35.504  INFO 7632 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/readback]      : Initializing Spring embedded WebApplicationContext
+2017-05-04 10:22:35.505  INFO 7632 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2029 ms
+2017-05-04 10:22:35.615  INFO 7632 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 10:22:35.619  INFO 7632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 10:22:35.730  INFO 7632 --- [restartedMain] com.mchange.v2.log.MLog                  : MLog clients using log4j logging.
+2017-05-04 10:22:35.751  INFO 7632 --- [restartedMain] com.mchange.v2.c3p0.C3P0Registry         : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-04 10:22:36.179  INFO 7632 --- [restartedMain] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99n1m2auvz1a8qnz5|1c60fcc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99n1m2auvz1a8qnz5|1c60fcc, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.8.1:3306/web_reader?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-04 10:22:56.157  WARN 7632 --- [Timer-0] c.m.v.a.ThreadPoolAsynchronousRunner     : com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1dd7be1 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+2017-05-04 10:22:56.162  WARN 7632 --- [Timer-0] c.m.v.a.ThreadPoolAsynchronousRunner     : com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@1dd7be1 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@bd86c2 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@da3b58 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@16e4d6b (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@9cb2b0
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1976401
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.lang.Thread.sleep(Native Method)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1805)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+2017-05-04 10:23:57.558  INFO 6416 --- [restartedMain] com.china.ciic.bookgenerate.Application  : Starting Application on He-PC with PID 6416 (D:\studywebSpringBootDemo\bookgenerate\build\build\classes\main started by once in D:\studywebSpringBootDemo)
+2017-05-04 10:23:57.559  INFO 6416 --- [restartedMain] com.china.ciic.bookgenerate.Application  : No active profile set, falling back to default profiles: default
+2017-05-04 10:23:57.865  INFO 6416 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@351ddc: startup date [Thu May 04 10:23:57 CST 2017]; root of context hierarchy
+2017-05-04 10:23:59.782  INFO 6416 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-05-04 10:23:59.793  INFO 6416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-04 10:23:59.793  INFO 6416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-05-04 10:23:59.893  INFO 6416 --- [localhost-startStop-1] o.a.c.c.C.[.[localhost].[/readback]      : Initializing Spring embedded WebApplicationContext
+2017-05-04 10:23:59.893  INFO 6416 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2031 ms
+2017-05-04 10:24:00.002  INFO 6416 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-04 10:24:00.006  INFO 6416 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-04 10:24:00.112  INFO 6416 --- [restartedMain] com.mchange.v2.log.MLog                  : MLog clients using log4j logging.
+2017-05-04 10:24:00.133  INFO 6416 --- [restartedMain] com.mchange.v2.c3p0.C3P0Registry         : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-05-04 10:24:00.563  INFO 6416 --- [restartedMain] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99n1m2cnzx5zo2vg|1e0ea77, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99n1m2cnzx5zo2vg|1e0ea77, idleConnectionTestPeriod -> 0, initialPoolSize -> 5, jdbcUrl -> jdbc:mysql://192.168.8.22:3306/web_reader?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-04 10:24:01.177  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bookcontent/chaptercontent]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.BookContentControl.chapterContent(java.lang.Long,java.lang.String,java.lang.String)
+2017-05-04 10:24:01.178  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bookcontent/chapterhtmlcontent]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.BookContentControl.chapterHtmlContent(java.lang.Long,java.lang.String,java.lang.String)
+2017-05-04 10:24:01.179  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bookcontent/coverimage]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.BookContentControl.coverImage(java.lang.Long)
+2017-05-04 10:24:01.179  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/bookcontent/directoryinfo]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.BookContentControl.directoryInfo(java.lang.Long)
+2017-05-04 10:24:01.181  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/ignorelist]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.ignoreList(java.lang.Integer,java.lang.Integer)
+2017-05-04 10:24:01.182  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/errorlistwithoutdeal]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.errorListWithoutdeal(java.lang.Integer,java.lang.Integer)
+2017-05-04 10:24:01.182  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/tryaginerror]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.tryAginError(long[])
+2017-05-04 10:24:01.182  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/ignorerrors]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.ignoreErrors(java.lang.Long[])
+2017-05-04 10:24:01.183  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/marksuccess]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.markSuccess(java.lang.Long)
+2017-05-04 10:24:01.183  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/successlist]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.successList(java.lang.Integer,java.lang.Integer)
+2017-05-04 10:24:01.183  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/errormanage/aginlist]}" onto public com.china.ciic.bookgenerate.model.json.BaseResponse com.china.ciic.bookgenerate.controller.CreateTxtErrorManageControl.aginList(java.lang.Integer,java.lang.Integer)
+2017-05-04 10:24:01.190  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-04 10:24:01.190  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-04 10:24:01.340  INFO 6416 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@351ddc: startup date [Thu May 04 10:23:57 CST 2017]; root of context hierarchy
+2017-05-04 10:24:01.405  INFO 6416 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2017-05-04 10:24:02.156  WARN 6416 --- [restartedMain] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2017-05-04 10:24:02.359  INFO 6416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-04 10:24:02.453  INFO 6416 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-04 10:24:02.473  INFO 6416 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2017-05-04 10:24:02.566  INFO 6416 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-05-04 10:24:02.572  INFO 6416 --- [restartedMain] com.china.ciic.bookgenerate.Application  : Started Application in 5.493 seconds (JVM running for 5.984)
+2017-05-04 10:24:03.070  INFO 6416 --- [pool-3-thread-1] c.m.v.c.i.AbstractPoolBackedDataSource   : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99n1m2cnzx5zo2vg|1e214bf, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99n1m2cnzx5zo2vg|1e214bf, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://10.1.2.62:3306/studymanager?autoReconnect=true&useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 10, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-05-04 10:24:03.156  INFO 6416 --- [pool-3-thread-1] c.c.c.bookgenerate.task.BookTxtCreate    : 开始制作：五四风云人物文萃：陈独秀
