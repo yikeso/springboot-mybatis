@@ -5,13 +5,13 @@
       <GradleProjectSettings>
         <option name="createEmptyContentRootDirectories" value="true" />
         <option name="distributionType" value="LOCAL" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../studywebSpringBootDemo" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-3.4.1" />
-        <option name="gradleJvm" value="1.8" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:/gradle-3.4.1" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../studywebSpringBootDemo" />
-            <option value="$PROJECT_DIR$/../studywebSpringBootDemo/bookgenerate" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/bookgenerate" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

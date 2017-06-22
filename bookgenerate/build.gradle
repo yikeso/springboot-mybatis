@@ -13,7 +13,8 @@ buildscript {
     }
     dependencies {
         //springboot依赖包
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
+                "io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE")
     }
 }
 
@@ -29,7 +30,7 @@ idea {
 }
 
 apply plugin: 'org.springframework.boot'
-
+apply plugin: "io.spring.dependency-management"
 
 group 'com.china.ciic'
 version '2.0-SNAPSHOT'
@@ -47,11 +48,19 @@ repositories {
     jcenter()
 }
 
+dependencyManagement {
+    imports {
+        mavenBom 'org.springframework.cloud:spring-cloud-config:1.3.1.RELEASE'
+    }
+}
+
 dependencies {
     compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.0')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
     compile('com.github.pagehelper:pagehelper:4.1.0')
+    //从配置中心读取配置
+    compile('org.springframework.cloud:spring-cloud-starter-config')
     //数据源
     compile('c3p0:c3p0:0.9.1.2')
     compile('jdom:jdom:1.0')
